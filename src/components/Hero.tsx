@@ -2,7 +2,7 @@ import developer from '../img/developer.png'
 
 const Hero = () => {
   return (
-    <div className="max-w-6xl mx-3 md:mx-auto place-content-center h-2/3 mt-10">
+    <div className="max-w-6xl mx-3 md:mx-4 lg:mx-5 xl:mx-auto place-content-center h-2/3 mt-10">
       <div className="flex justify-between items-center flex-col lg:flex-row">
         <div>
           <p className="text-white text-5xl">

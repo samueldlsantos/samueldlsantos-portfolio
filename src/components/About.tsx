@@ -2,10 +2,10 @@ import developer from '../img/developer.png'
 
 const About = () => {
   return (
-    <div className="max-w-6xl mx-3 md:mx-auto">
-      <p className="text-white text-center text-4xl font-bold mb-5">
+    <div className="max-w-6xl mx-3 md:mx-4 lg:mx-5 xl:mx-auto mt-10">
+      <h2 className="text-white text-center text-4xl font-bold mb-5">
         Sobre mi
-      </p>
+      </h2>
 
       <div className="flex gap-3 items-center">
         <div className="w-1/3">
