@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Portfolio from "./components/Portfolio";
 import WorkExperience from "./components/WorkExperience";
-import { experiences, projects } from "./data";
+import { personalInformation, experiences, projects } from "./data";
 
 function App() {
   return (
@@ -14,8 +14,8 @@ function App() {
       </div>
 
       <Header />
-      <Hero />
-      <About />
+      <Hero name={personalInformation.name} profession={personalInformation.profession} />
+      <About introduction={personalInformation.introduction} />
       <WorkExperience experiences={experiences}/>
       <Portfolio projects={projects}/>
       <Footer />

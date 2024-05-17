@@ -1,3 +1,9 @@
+export type PersonalInformation = {
+    name: string,
+    profession: string,
+    location: string,
+    introduction: string
+}
 export type Experience = {
     id: number,
     year: string,
