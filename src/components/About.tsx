@@ -7,11 +7,11 @@ const About = () => {
         Sobre mi
       </h2>
 
-      <div className="flex gap-3 items-center">
-        <div className="w-1/3">
+      <div className="md:flex gap-3 items-center">
+        <div className="md:w-1/3">
             <img src={developer} alt="Imagen dev" />
         </div>
-        <div className=" w-2/3">
+        <div className=" md:w-2/3">
           <p className="text-white">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
             recusandae minima sapiente dolorem, nisi obcaecati est repudiandae
