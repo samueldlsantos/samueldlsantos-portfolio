@@ -7,7 +7,7 @@ type PortfolioItemProps = {
 
 const PortfolioItem = ({ project }: PortfolioItemProps) => {
   return (
-    <div className="flex flex-col rounded-lg backdrop-blur-lg bg-transparent py-5 px-4 border-2 border-blue-500/60 shadow-lg shadow-blue-500/20 hover:shadow-2xl hover:shadow-blue-500/75 ">
+    <div className="flex flex-col gap-4 rounded-lg backdrop-blur-lg bg-transparent py-5 px-4 border-4 border-blue-500/50 shadow-lg shadow-blue-500/20 hover:shadow-2xl hover:shadow-blue-500/75">
       <div className="flex-grow">
         <div className="mx-auto max-w-72">
           <img className="rounded-lg shadow-lg shadow-blue-500/20" src={project.image} />
