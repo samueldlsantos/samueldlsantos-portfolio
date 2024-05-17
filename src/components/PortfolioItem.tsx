@@ -1,4 +1,3 @@
-import developer from "../img/developer.png";
 import { ImGithub, ImRocket } from "react-icons/im";
 import { Project } from "../types";
 
