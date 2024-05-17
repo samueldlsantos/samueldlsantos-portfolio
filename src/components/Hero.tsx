@@ -8,7 +8,6 @@ import { Variants, motion } from "framer-motion"
 
 type HeroProps = {
   name: string;
-  profession: string;
 };
 
 const iconVariants = (duration: number) : Variants => ({
@@ -25,7 +24,7 @@ const iconVariants = (duration: number) : Variants => ({
 }
 );
 
-const Hero = ({ name, profession }: HeroProps) => {
+const Hero = ({ name }: HeroProps) => {
   return (
     <div className="max-w-6xl mx-3 md:mx-4 lg:mx-5 xl:mx-auto md:place-content-center h-5/6">
       <div className="flex justify-between items-center flex-col gap-5 lg:flex-row">

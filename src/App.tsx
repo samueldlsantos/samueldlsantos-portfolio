@@ -14,7 +14,7 @@ function App() {
       </div>
 
       <Header />
-      <Hero name={personalInformation.name} profession={personalInformation.profession} />
+      <Hero name={personalInformation.name} />
       <About introduction={personalInformation.introduction} />
       <WorkExperience experiences={experiences}/>
       <Portfolio projects={projects}/>
