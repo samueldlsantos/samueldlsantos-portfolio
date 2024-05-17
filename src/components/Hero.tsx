@@ -3,7 +3,7 @@ import { AiOutlineJavaScript   } from "react-icons/ai";
 import { SiDotnet , SiTypescript, SiMicrosoftsqlserver, SiTailwindcss } from "react-icons/si";
 import { FaReact } from "react-icons/fa6";
 import { TypeAnimation } from "react-type-animation";
-import { motion } from "framer-motion"
+import { Variants, motion } from "framer-motion"
 
 
 type HeroProps = {
@@ -11,7 +11,7 @@ type HeroProps = {
   profession: string;
 };
 
-const iconVariants = (duration: number) => ({
+const iconVariants = (duration: number) : Variants => ({
   initial: {y:-10},
   animate:{
     y: [10,-10],
@@ -22,8 +22,8 @@ const iconVariants = (duration: number) => ({
       repeatType: "reverse"
     }
   }
-
-});
+}
+);
 
 const Hero = ({ name, profession }: HeroProps) => {
   return (
