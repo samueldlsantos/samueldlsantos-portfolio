@@ -29,13 +29,13 @@ const Hero = ({ name }: HeroProps) => {
     <div className="max-w-6xl mx-3 md:mx-4 lg:mx-5 xl:mx-auto md:place-content-center h-5/6 mt-10">
       <div className="flex justify-between items-center flex-col gap-5 lg:flex-row">
         <div>
-          <h1 className="text-white text-5xl font-thin">
+          <h1 className=" text-bluechill-50 text-5xl font-bold">
             Hola, soy{" "}
-            <span className="font-bold text-blue-600 text-6xl block">
+            <span className="font-bold text-bluechill-500 text-6xl block">
               {name}
             </span>
           </h1>
-          <div className="relative md:mt-10 bg-blue-600 p-2 rounded-md font-bold">
+          <div className="relative md:mt-10 bg-bluechill-600 p-2 rounded-md font-bold">
             <div className="overflow-hidden h-16 flex items-center">
               <TypeAnimation
                 sequence={[
@@ -54,7 +54,7 @@ const Hero = ({ name }: HeroProps) => {
                 ]}
                 wrapper="span"
                 speed={50}
-                className="text-3xl md:text-4xl text-white"
+                className="text-3xl md:text-4xl text-bluechill-50"
                 repeat={Infinity}
                 style={{ display: 'inline-block' }}
               />
@@ -72,7 +72,7 @@ const Hero = ({ name }: HeroProps) => {
               variants={iconVariants(2)}
               initial="initial"
               animate="animate"
-              className="rounded-2xl border-4 border-blue-500/50 p-2"
+              className="rounded-2xl border-4 border-bluechill-500/50 p-2"
             >
               <SiDotnet className="text-violet-500 text-4xl" />
             </motion.div>
@@ -80,7 +80,7 @@ const Hero = ({ name }: HeroProps) => {
               variants={iconVariants(3)}
               initial="initial"
               animate="animate"
-              className="rounded-2xl border-4 border-blue-500/50 p-2"
+              className="rounded-2xl border-4 border-bluechill-500/50 p-2"
             >
               <SiMicrosoftsqlserver className="text-yellow-600 text-4xl" />
             </motion.div>
@@ -88,7 +88,7 @@ const Hero = ({ name }: HeroProps) => {
               variants={iconVariants(2.5)}
               initial="initial"
               animate="animate"
-              className="rounded-2xl border-4 border-blue-500/50 p-2"
+              className="rounded-2xl border-4 border-bluechill-500/50 p-2"
             >
               <AiOutlineJavaScript className="text-yellow-400 text-4xl" />
             </motion.div>
@@ -96,7 +96,7 @@ const Hero = ({ name }: HeroProps) => {
               variants={iconVariants(2)}
               initial="initial"
               animate="animate"
-              className="rounded-2xl border-4 border-blue-500/50 p-2"
+              className="rounded-2xl border-4 border-bluechill-500/50 p-2"
             >
               <SiTypescript className="text-blue-500 text-4xl" />
             </motion.div>
@@ -104,7 +104,7 @@ const Hero = ({ name }: HeroProps) => {
               variants={iconVariants(3.5)}
               initial="initial"
               animate="animate"
-              className="rounded-2xl border-4 border-blue-500/50 p-2"
+              className="rounded-2xl border-4 border-bluechill-500/50 p-2"
             >
               <FaReact className="text-blue-300 text-4xl" />
             </motion.div>
@@ -112,7 +112,7 @@ const Hero = ({ name }: HeroProps) => {
               variants={iconVariants(3)}
               initial="initial"
               animate="animate"
-              className="rounded-2xl border-4 border-blue-500/50 p-2"
+              className="rounded-2xl border-4 border-bluechill-500/50 p-2"
             >
               <SiTailwindcss className="text-sky-700 text-4xl" />
             </motion.div>

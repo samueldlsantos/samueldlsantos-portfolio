@@ -6,7 +6,7 @@ type AboutProps = {
 const About = ({introduction} : AboutProps) => {
   return (
     <div className="max-w-6xl mx-3 md:mx-4 lg:mx-5 xl:mx-auto mt-20">
-      <h2 className="text-white text-center text-4xl font-bold mb-5">
+      <h2 className="text-bluechill-50 text-center text-4xl font-bold mb-5">
         Sobre mi
       </h2>
       <div className="flex flex-col md:flex-row gap-10 items-center">
@@ -14,7 +14,7 @@ const About = ({introduction} : AboutProps) => {
             <img className='rounded-lg' src={developer} alt="Imagen dev" />
         </div>
         <div className=" md:w-2/3">
-          <p className="text-white">
+          <p className="text-bluechill-50">
             {introduction}
           </p>
         </div>
