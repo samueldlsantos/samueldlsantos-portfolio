@@ -8,7 +8,7 @@ type WorkItemProps = {
 const WorkItem = ({ experience }: WorkItemProps) => {
   return (
     <div className="border-l-4 border-blue-500/50 p-5 flex md:gap-5 lg:gap-36 flex-col md:flex-row md:items-center md:pb-12 relative">
-      <div className="md:w-1/2 lg:w-1/3">
+      <div className=" mt-10 md:mt-0 md:w-1/2 lg:w-1/3">
         <p className="text-blue-600  font-bold text-2xl rounded-md">
           {experience.role}
         </p>
