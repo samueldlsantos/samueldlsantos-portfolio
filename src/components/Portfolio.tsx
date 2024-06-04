@@ -8,7 +8,7 @@ type PortfolioProps = {
 const Portfolio = ({projects} : PortfolioProps) => {
   return (
     <div className="max-w-6xl mx-3 md:mx-4 lg:mx-5 xl:mx-auto mt-20">
-        <h2 className="text-bluechill-50 text-center text-4xl font-bold mb-10">Portafolio</h2>
+        <h2 className="text-bluechill-50 text-center text-4xl font-bold mb-10">Proyectos</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {
             projects.length > 0 ?
