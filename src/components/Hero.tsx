@@ -38,7 +38,7 @@ const Hero = ({ name }: HeroProps) => {
         </div>
         <div className="sm:max-w-md">
           <img
-            className="rounded-lg"
+            className="blob hero rounded-lg"
             src={developer}
             alt="Imagen del desarrollador"
           />
