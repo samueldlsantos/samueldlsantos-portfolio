@@ -7,7 +7,7 @@ type WorkItemProps = {
 
 const WorkItem = ({ experience }: WorkItemProps) => {
   return (
-    <div className="border-l-4 border-bluechill-500 p-5 flex md:gap-5 lg:gap-36 flex-col md:flex-row md:items-center md:pb-12 relative">
+    <div className="border-l-4 border-bluechill-500 p-5 flex md:gap-5 lg:gap-36 flex-col md:flex-row md:items-center md:pb-12 relative transition ease-in-out hover:-translate-y-1 hover:scale-105">
       <div className=" mt-10 md:mt-0 md:w-1/2 lg:w-1/3">
         <p className="text-bluechill-500  font-bold text-2xl rounded-md">
           {experience.role}
@@ -22,7 +22,7 @@ const WorkItem = ({ experience }: WorkItemProps) => {
           <p>{experience.year}</p>
         </div>
       </div>
-      <div className="text-bluechill-50 mt-3 md:w-1/2 md:mt-0 lg:w-2/3">
+      <div className=" text-bluechill-50 mt-3 md:w-1/2 md:mt-0 lg:w-2/3 backdrop-blur-xl backdrop-brightness-75 bg-white/20 p-5 w-full h-full rounded">
         {experience.description}
       </div>
     </div>

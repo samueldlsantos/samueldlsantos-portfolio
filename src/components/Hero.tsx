@@ -10,7 +10,7 @@ const Hero = ({ name }: HeroProps) => {
     <div className="max-w-6xl mx-3 md:mx-4 lg:mx-5 xl:mx-auto md:place-content-center h-5/6 mt-10">
       <div className="flex justify-between items-center flex-col gap-5 lg:flex-row">
         <div>
-          <h1 className=" text-bluechill-50 text-5xl font-bold">
+          <h1 className=" text-bluechill-50 text-5xl">
             Hola, soy{" "}
             <span className="font-bold text-bluechill-500 text-6xl block">
               {name}

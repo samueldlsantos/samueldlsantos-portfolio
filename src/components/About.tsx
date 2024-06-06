@@ -13,7 +13,7 @@ const About = ({introduction} : AboutProps) => {
         <div className="max-w-xs md:w-1/3">
             <img className='rounded-lg' src={developer} alt="Imagen dev" />
         </div>
-        <div className=" md:w-2/3">
+        <div className=" md:w-2/3 backdrop-blur-xl backdrop-brightness-75 bg-white/20 p-10 rounded-lg md:h-72 place-content-center">
           <p className="text-bluechill-50">
             {introduction}
           </p>
