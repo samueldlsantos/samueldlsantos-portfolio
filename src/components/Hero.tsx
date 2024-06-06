@@ -26,12 +26,6 @@ const Hero = ({ name }: HeroProps) => {
                   1000,
                   "Desarrollador Back-end",
                   1000,
-                  "Desarrollador Full-Stack",
-                  1000,
-                  "Desarrollador WEB",
-                  1000,
-                  "Diseñador UX/UI",
-                  1000,
                 ]}
                 wrapper="span"
                 speed={50}
