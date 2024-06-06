@@ -19,6 +19,7 @@ export default {
       emerald: colors.emerald,
       indigo: colors.indigo,
       yellow: colors.yellow,
+      red: colors.red,
       'bluechill':{
         50: '#f0f9ff',
         100: '#e0f2fe',
@@ -36,7 +37,13 @@ export default {
         1100: '#020c18',
       },
     },
-    extend: {},
+    extend: {
+      colors: {
+        bg: "var(--color-bg)",
+        primary: "var(--color-primary)",
+        textprimary: "var(--color-text-primary)"
+      }
+    },
   },
   plugins: [],
 }
