@@ -86,63 +86,63 @@ function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
 const Skills = () => {
   return (
     <div className="mx-3 md:mx-4 lg:mx-5 xl:mx-auto mt-20">
-      <h2 className="text-bluechill-50 text-center text-4xl font-bold mb-10">
+      <h2 className="text-textBase text-center text-4xl font-bold mb-10">
         Skills
       </h2>
 
       <ParallaxText baseVelocity={-2}>
         <div className="flex items-center md:justify-center gap-7 mr-7">
-          <div className="group/skill rounded-lg p-2 backdrop-blur-xl backdrop-brightness-75 bg-white/20 hover:bg-white/10 relative place-content-center">
+          <div className="group/skill shadow rounded-lg p-2 backdrop-blur-xl bg-backdrop hover:bg-backdropHover relative place-content-center">
             <SiDotnet className="text-violet-500 text-9xl group-hover/skill:blur" />
-            <p className="invisible group-hover/skill:visible absolute inset-0 text-center content-center text-white font-bold text-xl">
+            <p className="invisible group-hover/skill:visible absolute inset-0 text-center content-center text-textBase font-bold text-xl">
               .NET
             </p>
           </div>
-          <div className="group/skill rounded-lg p-2 backdrop-blur-xl backdrop-brightness-75 bg-white/20 hover:bg-white/10 relative place-content-center">
+          <div className="group/skill shadow rounded-lg p-2 backdrop-blur bg-backdrop hover:bg-backdropHover relative place-content-center">
             <SiMicrosoftsqlserver className="text-yellow-600 text-9xl group-hover/skill:blur" />
-            <p className="invisible group-hover/skill:visible absolute inset-0 text-center content-center text-white font-bold text-xl">
+            <p className="invisible group-hover/skill:visible absolute inset-0 text-center content-center text-textBase font-bold text-xl">
               SQL Server
             </p>
           </div>
-          <div className="group/skill rounded-lg p-2 backdrop-blur-xl backdrop-brightness-75 bg-white/20 hover:bg-white/10 relative place-content-center">
+          <div className="group/skill shadow rounded-lg p-2 backdrop-blur-xl bg-backdrop hover:bg-backdropHover relative place-content-center">
             <FaReact className="text-blue-300 text-9xl group-hover/skill:blur" />
-            <p className="invisible group-hover/skill:visible absolute inset-0 text-center content-center text-white font-bold text-xl">
+            <p className="invisible group-hover/skill:visible absolute inset-0 text-center content-center text-textBase font-bold text-xl">
               React.js
             </p>
           </div>
-          <div className="group/skill rounded-lg p-2 backdrop-blur-xl backdrop-brightness-75 bg-white/20 hover:bg-white/10 relative place-content-center">
+          <div className="group/skill shadow rounded-lg p-2 backdrop-blur-xl bg-backdrop hover:bg-backdropHover relative place-content-center">
             <SiTailwindcss className="text-sky-700 text-9xl group-hover/skill:blur" />
-            <p className="invisible group-hover/skill:visible absolute inset-0 text-center content-center text-white font-bold text-xl">
+            <p className="invisible group-hover/skill:visible absolute inset-0 text-center content-center text-textBase font-bold text-xl">
               Tailwind CSS
             </p>
           </div>
-          <div className="group/skill rounded-lg p-2 backdrop-blur-xl backdrop-brightness-75 bg-white/20 hover:bg-white/10 relative place-content-center">
+          <div className="group/skill shadow rounded-lg p-2 backdrop-blur-xl bg-backdrop hover:bg-backdropHover relative place-content-center">
             <SiHtml5 className=" text-red-500 text-9xl group-hover/skill:blur" />
-            <p className="invisible group-hover/skill:visible absolute inset-0 text-center content-center text-white font-bold text-xl">
+            <p className="invisible group-hover/skill:visible absolute inset-0 text-center content-center text-textBase font-bold text-xl">
               HTML
             </p>
           </div>
-          <div className="group/skill rounded-lg p-2 backdrop-blur-xl backdrop-brightness-75 bg-white/20 hover:bg-white/10 relative place-content-center">
+          <div className="group/skill shadow rounded-lg p-2 backdrop-blur-xl bg-backdrop hover:bg-backdropHover relative place-content-center">
             <SiCss3 className=" text-sky-500 text-9xl group-hover/skill:blur" />
-            <p className="invisible group-hover/skill:visible absolute inset-0 text-center content-center text-white font-bold text-xl">
+            <p className="invisible group-hover/skill:visible absolute inset-0 text-center content-center text-textBase font-bold text-xl">
               CSS
             </p>
           </div>
-          <div className="group/skill rounded-lg p-2 backdrop-blur-xl backdrop-brightness-75 bg-white/20 hover:bg-white/10 relative place-content-center">
+          <div className="group/skill shadow rounded-lg p-2 backdrop-blur-xl bg-backdrop hover:bg-backdropHover relative place-content-center">
             <SiBootstrap className=" text-violet-700 text-9xl group-hover/skill:blur" />
-            <p className="invisible group-hover/skill:visible absolute inset-0 text-center content-center text-white font-bold text-xl">
+            <p className="invisible group-hover/skill:visible absolute inset-0 text-center content-center text-textBase font-bold text-xl">
               Bootstrap
             </p>
           </div>
-          <div className="group/skill rounded-lg p-2 backdrop-blur-xl backdrop-brightness-75 bg-white/20 hover:bg-white/10 relative place-content-center">
+          <div className="group/skill shadow rounded-lg p-2 backdrop-blur-xl bg-backdrop hover:bg-backdropHover relative place-content-center">
             <SiJavascript className="text-yellow-400 text-9xl group-hover/skill:blur" />
-            <p className="invisible group-hover/skill:visible absolute inset-0 text-center content-center text-white font-bold text-xl">
+            <p className="invisible group-hover/skill:visible absolute inset-0 text-center content-center text-textBase font-bold text-xl">
               JavaScript
             </p>
           </div>
-          <div className="group/skill rounded-lg p-2 backdrop-blur-xl backdrop-brightness-75 bg-white/20 hover:bg-white/10 relative place-content-center">
+          <div className="group/skill shadow rounded-lg p-2 backdrop-blur-xl bg-backdrop hover:bg-backdropHover relative place-content-center">
             <SiTypescript className="text-blue-500 text-9xl group-hover/skill:blur" />
-            <p className="invisible group-hover/skill:visible absolute inset-0 text-center content-center text-white font-bold text-xl">
+            <p className="invisible group-hover/skill:visible absolute inset-0 text-center content-center text-textBase font-bold text-xl">
               TypeScript
             </p>
           </div>

@@ -20,6 +20,36 @@
         white-space: nowrap;
         flex-wrap: nowrap;
       }
+
+      :root {
+        --color-bg-primary: #000;
+        --color-primary: #0e91e9;
+        --color-btn-primary: #0e91e9;
+        --color-btn-pressed: #0362a1;
+        --color-backdrop: rgb(255 255 255 / 0.2);
+        --color-backdrop-hover: rgb(255 255 255 / 0.1);
+        --color-text-base: #fff;
+      }
+}
+
+.theme-dark {
+  --color-bg-primary: #000;
+  --color-primary: #0e91e9;
+  --color-btn-primary: #0e91e9;
+  --color-btn-pressed: #0362a1;
+  --color-backdrop: rgb(255 255 255 / 0.2);
+  --color-backdrop-hover: rgb(255 255 255 / 0.1);
+  --color-text-base: #fff;
+}
+
+.theme-light {
+  --color-bg-primary: #f3f3f3;
+  --color-primary: #0e91e9;
+  --color-btn-primary: #0e91e9;
+  --color-btn-pressed: #0362a1;
+  --color-backdrop: rgba(255, 255, 255, 0.4);
+  --color-backdrop-hover: rgba(255, 255, 255, 0.308);
+  --color-text-base: #2e2e2e;
 }
 
 .blob {
@@ -33,6 +63,18 @@
 
 .about {
   animation: animate-img-about 7s ease-in-out infinite;
+}
+
+.background-1 {
+  animation: animate-background-1 7s ease-in-out infinite;
+}
+
+.background-2 {
+  animation: animate-background-2 7s ease-in-out infinite;
+}
+
+.background-3 {
+  animation: animate-background-3 7s ease-in-out infinite;
 }
 
 @keyframes animate-img-hero {
@@ -64,3 +106,64 @@
     border-radius: 45% 55% 55% 45% / 45% 55% 45% 55%;
   }
 }
+
+@keyframes animate-background-1 {
+  0%, 100% {
+    border-radius: 60% 40% 50% 50% / 50% 50% 60% 40%;
+    transform: scale(1) translate(0px, 0px);
+  }
+  25% {
+    border-radius: 55% 45% 45% 55% / 55% 45% 55% 45%;
+    transform: scale(0.8) translate(30px, -50px);
+  }
+  50% {
+    border-radius: 50% 50% 60% 40% / 60% 40% 50% 50%;
+    transform: scale(1.2) translate(-25px, 25px);
+  }
+  75% {
+    border-radius: 45% 55% 55% 45% / 45% 55% 45% 55%;
+    transform: scale(1.8) translate(15px, -40px);
+  }
+}
+
+@keyframes animate-background-2 {
+  0%, 100% {
+    border-radius: 20% 80% 90% 30% / 90% 70% 20% 80%;
+    transform: scale(0.5) translate(10px, -30px);
+  }
+  25% {
+    border-radius: 15% 90% 90% 55% / 55% 45% 65% 35%;
+    transform: scale(1.3) translate(20px, -30px);
+  }
+  50% {
+    border-radius: 55% 45% 65% 35% / 65% 35% 55% 45%;
+    transform: scale(1.8) translate(-20px, 20px);
+  }
+  75% {
+    border-radius: 50% 50% 60% 40% / 60% 40% 50% 50%;
+    transform: scale(1.2) translate(10px, -25px);
+  }
+}
+
+@keyframes animate-background-3 {
+  0%, 100% {
+    border-radius: 65% 35% 55% 45% / 45% 55% 65% 35%;
+    transform: scale(1.5) translate(0px, 0px);
+  }
+  25% {
+    border-radius: 60% 40% 50% 50% / 50% 50% 60% 40%;
+    transform: scale(0.8) translate(40px, -60px);
+  }
+  50% {
+    border-radius: 55% 45% 60% 40% / 60% 40% 55% 45%;
+    transform: scale(0.5) translate(50px, 50px);
+  }
+  75% {
+    border-radius: 60% 40% 50% 50% / 50% 50% 60% 40%;
+    transform: scale(0.8) translate(40px, -60px);
+  }
+}
+
+
+
+

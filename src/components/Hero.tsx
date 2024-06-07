@@ -10,13 +10,13 @@ const Hero = ({ name }: HeroProps) => {
     <div className="max-w-6xl mx-3 md:mx-4 lg:mx-5 xl:mx-auto md:place-content-center h-5/6 mt-10">
       <div className="flex justify-between items-center flex-col gap-5 lg:flex-row">
         <div>
-          <h1 className=" text-bluechill-50 text-5xl">
+          <h1 className=" text-textBase text-5xl">
             Hola, soy{" "}
-            <span className="font-bold text-bluechill-500 text-6xl block">
+            <span className="font-bold text-primary text-6xl block">
               {name}
             </span>
           </h1>
-          <div className="relative md:mt-10 bg-bluechill-600 p-2 rounded-lg font-bold">
+          <div className="relative md:mt-10 p-2 rounded-lg font-bold w-full">
             <div className="overflow-hidden h-16 flex items-center">
               <TypeAnimation
                 sequence={[
@@ -29,7 +29,7 @@ const Hero = ({ name }: HeroProps) => {
                 ]}
                 wrapper="span"
                 speed={50}
-                className="text-3xl md:text-4xl text-bluechill-50"
+                className="text-3xl md:text-4xl text-textBase"
                 repeat={Infinity}
                 style={{ display: 'inline-block' }}
               />

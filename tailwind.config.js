@@ -20,6 +20,9 @@ export default {
       indigo: colors.indigo,
       yellow: colors.yellow,
       red: colors.red,
+      cyan: colors.cyan,
+      teal: colors.teal,
+      pink: colors.pink,
       'bluechill':{
         50: '#f0f9ff',
         100: '#e0f2fe',
@@ -39,9 +42,13 @@ export default {
     },
     extend: {
       colors: {
-        bg: "var(--color-bg)",
+        bgPrimary: "var(--color-bg-primary)",
         primary: "var(--color-primary)",
-        textprimary: "var(--color-text-primary)"
+        btnPrimary: "var(--color-btn-primary)",
+        btnPrimaryPressed: "var(--color-btn-pressed)",
+        backdrop: "var(--color-backdrop)",
+        backdropHover: "var(--color-backdrop-hover)",
+        textBase: "var(--color-text-base)"
       }
     },
   },
