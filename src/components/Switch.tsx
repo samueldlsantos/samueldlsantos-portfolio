@@ -1,6 +1,6 @@
 import { forwardRef} from 'react';
 import { CiLight } from "react-icons/ci";
-import { MdModeNight } from "react-icons/md";
+import { IoMoonOutline } from "react-icons/io5";
 
 interface SwitchProps {
     checked: boolean;
@@ -12,17 +12,17 @@ const Switch = forwardRef<HTMLInputElement, SwitchProps>((props, forwardRef) => 
     <label className='cursor-pointer'>
         <input type="checkbox" className='hidden' ref={forwardRef} {...props}/>
         <div className={`
-            w-14 p-1 rounded-full
-            ${props.checked ? "bg-blue-500": "bg-gray-300"}
+            w-14 rounded-full
+            ${props.checked ? "bg-primary": "bg-backdrop"}
             `}>
-                <div className={`w-fit p-0.5 shadow-sm rounded-full transition-all duration-300 text-white 
+                <div className={`w-fit p-0.5 shadow-sm rounded-full transition-all duration-300 text-textBase 
                     ${
                         props.checked ?
-                        "bg-white translate-x-6 rotate-0":
-                        "bg-gray-500 -rotate-180"
+                        "bg-white shadow translate-x-7 rotate-0":
+                        "bg-primary shadow -rotate-90"
 
                     }`}>
-                    {props.checked ? <CiLight className='text-yellow-500' /> : <MdModeNight />}
+                    {props.checked ? <CiLight className='text-primary' /> : <IoMoonOutline className='text-btnPrimaryText' />}
                 </div>
 
         </div>

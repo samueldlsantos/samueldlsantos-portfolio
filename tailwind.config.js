@@ -45,6 +45,7 @@ export default {
         bgPrimary: "var(--color-bg-primary)",
         primary: "var(--color-primary)",
         btnPrimary: "var(--color-btn-primary)",
+        btnPrimaryText: "var(--color-btn-text)",
         btnPrimaryPressed: "var(--color-btn-pressed)",
         backdrop: "var(--color-backdrop)",
         backdropHover: "var(--color-backdrop-hover)",

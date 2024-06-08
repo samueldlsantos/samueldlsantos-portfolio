@@ -29,9 +29,9 @@ const PortfolioItem = ({ project }: PortfolioItemProps) => {
             <a href={project.urlGithub} target="_blank">
               <div className="flex items-center gap-2 bg-btnPrimary hover:bg-btnPrimaryPressed justify-between p-2 rounded-md">
                 <div className="text-2xl">
-                  <ImGithub className=" text-textBase" />
+                  <ImGithub className=" text-btnPrimaryText" />
                 </div>
-                <p className="text-textBase">Código</p>
+                <p className="text-btnPrimaryText">Código</p>
               </div>
             </a>
           ) : (
@@ -42,9 +42,9 @@ const PortfolioItem = ({ project }: PortfolioItemProps) => {
             <a href={project.urlPreview} target="_blank">
               <div className="flex items-center gap-2 bg-btnPrimary hover:bg-btnPrimaryPressed justify-between p-2 rounded-md">
                 <div className="text-2xl">
-                  <ImRocket className=" text-textBase" />
+                  <ImRocket className=" text-btnPrimaryText" />
                 </div>
-                <p className="text-textBase">Demo</p>
+                <p className="text-btnPrimaryText">Demo</p>
               </div>
             </a>
           ) : (

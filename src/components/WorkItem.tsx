@@ -18,7 +18,7 @@ const WorkItem = ({ experience }: WorkItemProps) => {
           </div>
           <p className="text-textBase font-bold">{experience.company}</p>
         </div>
-        <div className="absolute top-0 -left-1 bg-primary  px-2 text-textBase rounded-md">
+        <div className="absolute top-0 -left-1 bg-primary  px-2 text-btnPrimaryText rounded-md">
           <p>{experience.year}</p>
         </div>
       </div>

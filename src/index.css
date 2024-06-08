@@ -25,11 +25,16 @@
         --color-bg-primary: #000;
         --color-primary: #0e91e9;
         --color-btn-primary: #0e91e9;
+        --color-btn-text: #fff;
         --color-btn-pressed: #0362a1;
         --color-backdrop: rgb(255 255 255 / 0.2);
         --color-backdrop-hover: rgb(255 255 255 / 0.1);
         --color-text-base: #fff;
       }
+
+      * {
+        transition: color 0.0s ease-in-out, background-color 0.3s ease-in-out;
+    }
 }
 
 .theme-dark {
@@ -43,7 +48,7 @@
 }
 
 .theme-light {
-  --color-bg-primary: #f3f3f3;
+  --color-bg-primary: #ffffff;
   --color-primary: #0e91e9;
   --color-btn-primary: #0e91e9;
   --color-btn-pressed: #0362a1;

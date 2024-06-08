@@ -87,7 +87,7 @@ const Skills = () => {
   return (
     <div className="mx-3 md:mx-4 lg:mx-5 xl:mx-auto mt-20">
       <h2 className="text-textBase text-center text-4xl font-bold mb-10">
-        Skills
+        Habilidades
       </h2>
 
       <ParallaxText baseVelocity={-2}>
