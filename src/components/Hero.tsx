@@ -7,17 +7,17 @@ type HeroProps = {
 
 const Hero = ({ name }: HeroProps) => {
   return (
-    <div className="max-w-6xl mx-3 md:mx-4 lg:mx-5 xl:mx-auto md:place-content-center h-5/6 mt-10">
-      <div className="flex justify-between items-center flex-col gap-5 lg:flex-row">
-        <div>
-          <h1 className=" text-textBase text-5xl">
+    <div className="max-w-6xl mx-3 md:mx-4 lg:mx-5 xl:mx-auto md:place-content-center h-5/6 mt-5 md:mt-10">
+      <div className="flex justify-betwee flex-col-reverse md:gap-5 lg:flex-row">
+        <div className="w-full">
+          <h1 className=" text-textBase text-3xl md:text-5xl">
             Hola, soy{" "}
-            <span className="font-bold text-primary text-6xl block">
+            <span className="font-bold text-primary text-4xl md:text-6xl block">
               {name}
             </span>
           </h1>
-          <div className="relative md:mt-10 p-2 rounded-lg font-bold w-full">
-            <div className="overflow-hidden h-16 flex items-center">
+          <div className="relative md:mt-10 rounded-lg font-bold w-full">
+            <div className="overflow-hidden h-28 md:h-32 flex">
               <TypeAnimation
                 sequence={[
                   "Ingeniero en desarrollo de software",
@@ -31,14 +31,14 @@ const Hero = ({ name }: HeroProps) => {
                 speed={50}
                 className="text-3xl md:text-4xl text-textBase"
                 repeat={Infinity}
-                style={{ display: 'inline-block' }}
+                style={{ display: 'block' }}
               />
             </div>
           </div>
         </div>
-        <div className="sm:max-w-md">
+        <div className="w-full">
           <img
-            className="blob hero rounded-lg"
+            className="blob hero rounded-lg sm:max-w-md mx-auto"
             src={developer}
             alt="Imagen del desarrollador"
           />
