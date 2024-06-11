@@ -1,13 +1,17 @@
 import { ImLinkedin, ImGithub } from "react-icons/im";
-import {Dispatch, SetStateAction} from "react";
-import Switch from "./Switch";
+import { usePortfolio } from "../hooks/usePortfolio";
+import { CiLight } from "react-icons/ci";
+import { IoMoonOutline } from "react-icons/io5";
+import Switch from "react-switch";
 
-type HeaderProps =  {
-  theme: boolean,
-  setTheme: Dispatch<SetStateAction<boolean>>;
-}
+const Header = () => {
+  const { state, dispatch } = usePortfolio();
 
-const Header = ({theme, setTheme} : HeaderProps) => {
+  const handleThemeChange = () => {
+    const theme = state.theme === "light" ? "dark" : "light";
+
+    dispatch({ type: "set-theme", payload: { theme: theme } });
+  };
   return (
     <div className="flex max-w-6xl mx-3 md:mx-4 lg:mx-5 xl:mx-auto justify-between items-center mt-5 text-2xl">
       <p className="flex justify-center items-center text-textBase">
@@ -19,7 +23,7 @@ const Header = ({theme, setTheme} : HeaderProps) => {
       {/* <div className="text-white">
          Navegacion
       </div> */}
-      <div className="flex text-textBase justify-between gap-3 ">
+      <div className="flex text-textBase justify-between items-center gap-3 ">
         <a
           className="hover:text-btnPrimary"
           href="https://github.com/samueldlsantos"
@@ -34,7 +38,31 @@ const Header = ({theme, setTheme} : HeaderProps) => {
         >
           <ImLinkedin />
         </a>
-        <Switch checked={theme} onChange={ e => setTheme(e.target.checked)} />
+        <Switch
+          onChange={handleThemeChange}
+          checked={state.theme === "light" ? true : false}
+          uncheckedHandleIcon={
+            <div className="flex justify-center p-1 place-items-center h-full">
+              <IoMoonOutline className="text-btnPrimaryText" />
+            </div>
+          }
+          checkedHandleIcon={
+            <div className="flex justify-center place-items-center h-full">
+              <CiLight className="text-primary" />
+            </div>
+          }
+          onColor="#0e91e9"
+          onHandleColor="#fff"
+          offHandleColor="#0e91e9"
+          handleDiameter={30}
+          uncheckedIcon={false}
+          checkedIcon={false}
+          boxShadow="0px 1px 5px rgba(0, 0, 0, 0.6)"
+          activeBoxShadow="0px 0px 1px 10px rgba(0, 0, 0, 0.2)"
+          height={20}
+          width={48}
+          id="material-switch"
+        />
       </div>
     </div>
   );

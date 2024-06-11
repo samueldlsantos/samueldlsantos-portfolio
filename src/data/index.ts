@@ -1,6 +1,6 @@
-import { Experience, Project } from "../types";
+import {PersonalInformation, Experience, Project } from "../types";
 
-export const personalInformation = {
+export const personalInformation: PersonalInformation = {
     name: "Samuel de los Santos",
     profession: "Ingeniero en Desarrollo de Software",
     location: "Monterrey, Nuevo León, México",

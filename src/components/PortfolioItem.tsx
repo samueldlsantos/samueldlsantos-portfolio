@@ -9,9 +9,6 @@ const PortfolioItem = ({ project }: PortfolioItemProps) => {
   return (
     <div
       className="flex flex-col justify-between w-full bg-contain rounded-lg transition ease-in-out hover:-translate-y-1 hover:scale-105 shadow"
-      // style={{
-      //   backgroundImage: `url(${project.image})`,
-      // }}
     >
       <div className="w-full">
         <img className="rounded-t-lg" src={project.image} />
