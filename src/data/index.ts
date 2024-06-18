@@ -52,4 +52,13 @@ export const projects: Project[] = [
     urlGithub: "https://github.com/samueldlsantos/calorie-tracker",
     urlPreview: "https://calories-tracker-ts.netlify.app",
   },
+  {
+    id: 4,
+    title: "Control de gastos",
+    image: "https://github.com/samueldlsantos/control-gastos-contextapi/blob/main/preview.png?raw=true",
+    description:
+      "Una herramienta para definir tu presupuesto, agregar y clasificar gastos, y mantener un seguimiento preciso de tus finanzas.",
+    urlGithub: "https://github.com/samueldlsantos/control-gastos-contextapi",
+    urlPreview: "https://control-gastos-context.netlify.app/",
+  },
 ];
